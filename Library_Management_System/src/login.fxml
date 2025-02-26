@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="application.controllers.LoginController"
+          alignment="center" hgap="10" vgap="10">
+
+    <!-- Username Field -->
+    <Label text="Username:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="usernameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <!-- Password Field -->
+    <Label text="Password:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <PasswordField fx:id="passwordField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <!-- Login Button -->
+    <Button text="Login" onAction="#handleLogin" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <!-- Error Label -->
+    <Label fx:id="errorLabel" textFill="red" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+</GridPane>
